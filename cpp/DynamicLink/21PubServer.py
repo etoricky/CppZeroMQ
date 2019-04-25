@@ -6,6 +6,7 @@
 
 import zmq
 from random import randrange
+import time
 
 context = zmq.Context()
 socket = context.socket(zmq.PUB)
@@ -17,3 +18,4 @@ while True:
     relhumidity = randrange(10, 60)
 
     socket.send_string("%i %i %i" % (zipcode, temperature, relhumidity))
+    time.sleep(0.5)

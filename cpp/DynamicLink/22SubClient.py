@@ -23,13 +23,6 @@ if isinstance(zip_filter, bytes):
 socket.setsockopt_string(zmq.SUBSCRIBE, "")
 
 # Process 5 updates
-total_temp = 0
 for update_nbr in range(5*1000000):
     string = socket.recv_string()
     print(string)
-    zipcode, temperature, relhumidity = string.split()
-    total_temp += int(temperature)
-
-print("Average temperature for zipcode '%s' was %dF" % (
-      zip_filter, total_temp / (update_nbr+1))
-)

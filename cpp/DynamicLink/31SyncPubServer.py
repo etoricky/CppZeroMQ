@@ -4,7 +4,7 @@
 import zmq
 
 #  We wait for 10 subscribers
-SUBSCRIBERS_EXPECTED = 3
+SUBSCRIBERS_EXPECTED = 1
 
 def main():
     context = zmq.Context()
@@ -18,22 +18,23 @@ def main():
     # Socket to receive signals
     syncservice = context.socket(zmq.REP)
     syncservice.bind('tcp://*:5562')
+    
+    while True:
+        # Get synchronization from subscribers
+        subscribers = 0
+        while subscribers < SUBSCRIBERS_EXPECTED:
+            # wait for synchronization request
+            msg = syncservice.recv()
+            # send synchronization reply
+            syncservice.send(b'')
+            subscribers += 1
+            print("+1 subscriber (%i/%i)" % (subscribers, SUBSCRIBERS_EXPECTED))
 
-    # Get synchronization from subscribers
-    subscribers = 0
-    while subscribers < SUBSCRIBERS_EXPECTED:
-        # wait for synchronization request
-        msg = syncservice.recv()
-        # send synchronization reply
-        syncservice.send(b'')
-        subscribers += 1
-        print("+1 subscriber (%i/%i)" % (subscribers, SUBSCRIBERS_EXPECTED))
+        # Now broadcast exactly 1M updates followed by END
+        for i in range(1000):
+            publisher.send(b'Rhubarb')
 
-    # Now broadcast exactly 1M updates followed by END
-    for i in range(1000):
-        publisher.send(b'Rhubarb')
-
-    publisher.send(b'END')
+        publisher.send(b'END')
 
 if __name__ == '__main__':
     main()

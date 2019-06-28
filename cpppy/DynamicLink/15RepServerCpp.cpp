@@ -25,7 +25,8 @@ int main (void)
         
         //  Wait for next request from client
         socket.recv (request);
-        std::cout << "Received Hello" << std::endl;
+        std::string rpl = std::string(static_cast<char*>(request.data()), request.size());
+        std::cout << "Received " << rpl.size() << " bytes, " << rpl << std::endl;
         
         std::this_thread::sleep_for(std::chrono::seconds(1));          //  Do some 'work'
         

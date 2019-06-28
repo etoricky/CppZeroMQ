@@ -16,7 +16,9 @@ socket.connect("tcp://localhost:5555")
 #  Do 10 requests, waiting each time for a response
 for request in range(10000000000):
     print("Sending request %s …" % request)
-    socket.send(b"Hello")
+    data = b"0"* ( 240+ request)
+    print(data)
+    socket.send(data)
 
     #  Get the reply.
     message = socket.recv()

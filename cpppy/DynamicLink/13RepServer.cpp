@@ -23,7 +23,7 @@ int main (void)
     while (1) {
         char buffer [10];
         zmq_recv (responder, buffer, 10, 0);
-        printf ("Received Hello\n");
+        printf ("Received %s\n", buffer);
         fflush(stdout);
         std::this_thread::sleep_for(std::chrono::seconds(1));          //  Do some 'work'
         zmq_send (responder, "World", 5, 0);

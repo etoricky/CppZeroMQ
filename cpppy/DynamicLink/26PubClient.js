@@ -20,8 +20,6 @@ console.log(filter);
 subscriber.subscribe('');
 
 // process 100 updates
-var total_temp = 0
-  , temps      = 0;
 subscriber.on('message', function(data) {
   console.log(data.toString());
 });

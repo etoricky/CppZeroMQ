@@ -1,9 +1,8 @@
 import zmq, json
 context = zmq.Context()
-print("Connecting to hello world server…")
 socket = context.socket(zmq.REQ)
 socket.connect("tcp://localhost:19404")
-dic = {'function':'DailyReportsRequest','arguments':{'from':1575158400,'to':1576108800,'limit':1}}
+dic = {'function':'DailyReportsRequest','arguments':{'from':1575158400,'to':1576108800,'limit':1,'logins':[145313793]}}
 print(dic)
 socket.send_string(json.dumps(dic))
 respond = socket.recv()

@@ -2,7 +2,7 @@ import zmq, json
 context = zmq.Context()
 socket = context.socket(zmq.REQ)
 socket.connect("tcp://localhost:19412")
-dic = {'function':'DailyReportsRequest','arguments':{'from':1575158400,'to':1576108800,'limit':1,'logins':[145313793]}}
+dic = {'function':'CfgShiftFeeder', 'arguments':{'pos':1,'shift':1}}
 print(dic)
 socket.send_string(json.dumps(dic))
 respond = socket.recv()
@@ -14,7 +14,7 @@ try:
         print(result.keys())
         if res==0:
             data = result.get('data', [])
-            with open('DailyReportsRequest.json', 'w') as outfile:
+            with open('CfgShiftFeeder.json', 'w') as outfile:
                 json.dump(data, outfile, indent=2)
             for datum in data:
                 print(data)

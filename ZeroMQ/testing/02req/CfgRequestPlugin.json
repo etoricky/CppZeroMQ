@@ -1,0 +1,195 @@
+[
+  {
+    "plugin": {
+      "name": "VirtualDealer.dll",
+      "info": {
+        "name": "Routing",
+        "version": 400,
+        "copyright": ""
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 1
+    },
+    "params": [
+      {
+        "name": "Delay (1-10 sec, 0 - disable)",
+        "value": "8"
+      },
+      {
+        "name": "Virtual Manager Account",
+        "value": "55557"
+      },
+      {
+        "name": "Groups",
+        "value": ",*,"
+      },
+      {
+        "name": "Symbols",
+        "value": ",*,"
+      },
+      {
+        "name": "Max Volume",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage (pips)",
+        "value": "100"
+      },
+      {
+        "name": "Max Profit Slippage (pips)",
+        "value": "0"
+      },
+      {
+        "name": "Max Profit Slippage Volume",
+        "value": "1.0"
+      },
+      {
+        "name": "Gap Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Safe Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Stops Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Pendings Mode",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Slide",
+        "value": "1"
+      },
+      {
+        "name": "Gap Stops Slide",
+        "value": "1"
+      },
+      {
+        "name": "News Stops & Freezes (levels)",
+        "value": "0"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "1"
+      },
+      {
+        "name": "News Time 1",
+        "value": "2001.01.31 19:43:00,10 min"
+      },
+      {
+        "name": "News Time 2",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "loganalyser.dll",
+      "info": {
+        "name": "LogAnalyser Settings",
+        "version": 101,
+        "copyright": "MetaQuotes Software Corp."
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Dangerous Avg Trade Time",
+        "value": "300"
+      },
+      {
+        "name": "Dangerous Confirm Deviation",
+        "value": "4"
+      },
+      {
+        "name": "Dangerous Order Deviation",
+        "value": "4"
+      },
+      {
+        "name": "Dangerous Pendings",
+        "value": "40"
+      },
+      {
+        "name": "Dangerous Request Delay",
+        "value": "2"
+      },
+      {
+        "name": "Dangerous Scalping Orders",
+        "value": "10"
+      },
+      {
+        "name": "Dangerous Tick Deviation",
+        "value": "5"
+      },
+      {
+        "name": "Dangerous Volume",
+        "value": "10.00"
+      },
+      {
+        "name": "Groups",
+        "value": ",*,"
+      },
+      {
+        "name": "Maximum Dangerous Users",
+        "value": "10"
+      },
+      {
+        "name": "Maximum Hyperactive Users",
+        "value": "15"
+      },
+      {
+        "name": "Maximum Recommendations",
+        "value": "10"
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "toptraders.dll",
+      "info": {
+        "name": "TopTraders Settings",
+        "version": 100,
+        "copyright": "MetaQuotes Software Corp."
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Groups",
+        "value": ",!demo*,*,"
+      },
+      {
+        "name": "Maximum Loss Trades",
+        "value": "10"
+      },
+      {
+        "name": "Maximum Profit Trades",
+        "value": "10"
+      },
+      {
+        "name": "Maximum Users",
+        "value": "15"
+      },
+      {
+        "name": "Minimum Profit Factor",
+        "value": "0.0"
+      },
+      {
+        "name": "Minimum Trades",
+        "value": "0"
+      }
+    ]
+  }
+]

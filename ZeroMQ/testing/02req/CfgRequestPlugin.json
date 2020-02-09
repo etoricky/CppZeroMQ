@@ -1,97 +1,6 @@
 [
   {
     "plugin": {
-      "name": "VirtualDealer.dll",
-      "info": {
-        "name": "Routing",
-        "version": 400,
-        "copyright": ""
-      },
-      "enabled": 1,
-      "configurable": 1,
-      "manager_access": 1
-    },
-    "params": [
-      {
-        "name": "Delay (1-10 sec, 0 - disable)",
-        "value": "8"
-      },
-      {
-        "name": "Virtual Manager Account",
-        "value": "55557"
-      },
-      {
-        "name": "Groups",
-        "value": ",*,"
-      },
-      {
-        "name": "Symbols",
-        "value": ",*,"
-      },
-      {
-        "name": "Max Volume",
-        "value": "0"
-      },
-      {
-        "name": "Max Losing Slippage (pips)",
-        "value": "100"
-      },
-      {
-        "name": "Max Profit Slippage (pips)",
-        "value": "0"
-      },
-      {
-        "name": "Max Profit Slippage Volume",
-        "value": "1.0"
-      },
-      {
-        "name": "Gap Level (spreads)",
-        "value": "0"
-      },
-      {
-        "name": "Gap Safe Level (spreads)",
-        "value": "0"
-      },
-      {
-        "name": "Gap Pendings Tick Counter",
-        "value": "5"
-      },
-      {
-        "name": "Gap Stops Tick Counter",
-        "value": "5"
-      },
-      {
-        "name": "Gap Pendings Mode",
-        "value": "0"
-      },
-      {
-        "name": "Gap Pendings Slide",
-        "value": "1"
-      },
-      {
-        "name": "Gap Stops Slide",
-        "value": "1"
-      },
-      {
-        "name": "News Stops & Freezes (levels)",
-        "value": "0"
-      },
-      {
-        "name": "Allow Pendings on News",
-        "value": "1"
-      },
-      {
-        "name": "News Time 1",
-        "value": "2001.01.31 19:43:00,10 min"
-      },
-      {
-        "name": "News Time 2",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "plugin": {
       "name": "loganalyser.dll",
       "info": {
         "name": "LogAnalyser Settings",
@@ -189,6 +98,1857 @@
       {
         "name": "Minimum Trades",
         "value": "0"
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "toptraders - Copy.dll",
+      "info": {
+        "name": "TopTraders Settings",
+        "version": 100,
+        "copyright": "MetaQuotes Software Corp."
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Groups",
+        "value": ",!demo*,*,"
+      },
+      {
+        "name": "Maximum Loss Trades",
+        "value": "10"
+      },
+      {
+        "name": "Maximum Profit Trades",
+        "value": "10"
+      },
+      {
+        "name": "Maximum Users",
+        "value": "15"
+      },
+      {
+        "name": "Minimum Profit Factor",
+        "value": "0.0"
+      },
+      {
+        "name": "Minimum Trades",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "VirtualDealer.dll",
+      "info": {
+        "name": "Routing",
+        "version": 400,
+        "copyright": ""
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Delay (1-10 sec, 0 - disable)",
+        "value": "0"
+      },
+      {
+        "name": "Virtual Manager Account",
+        "value": "50006"
+      },
+      {
+        "name": "Groups",
+        "value": ",*,"
+      },
+      {
+        "name": "Symbols",
+        "value": ",*,"
+      },
+      {
+        "name": "Max Volume",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage (pips)",
+        "value": "100"
+      },
+      {
+        "name": "Max Profit Slippage (pips)",
+        "value": "0"
+      },
+      {
+        "name": "Max Profit Slippage Volume",
+        "value": "1.0"
+      },
+      {
+        "name": "Gap Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Safe Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Stops Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Pendings Mode",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Slide",
+        "value": "1"
+      },
+      {
+        "name": "Gap Stops Slide",
+        "value": "1"
+      },
+      {
+        "name": "News Stops & Freezes (levels)",
+        "value": "0"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "1"
+      },
+      {
+        "name": "News Time 1",
+        "value": "2001.01.31 19:43:00,10 min"
+      },
+      {
+        "name": "News Time 2",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "VirtualDealer - Copy (2).dll",
+      "info": {
+        "name": "Routing",
+        "version": 400,
+        "copyright": ""
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Delay (1-10 sec, 0 - disable)",
+        "value": "0"
+      },
+      {
+        "name": "Virtual Manager Account",
+        "value": "50001"
+      },
+      {
+        "name": "Groups",
+        "value": ",*,"
+      },
+      {
+        "name": "Symbols",
+        "value": ",*,"
+      },
+      {
+        "name": "Max Volume",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage (pips)",
+        "value": "100"
+      },
+      {
+        "name": "Max Profit Slippage (pips)",
+        "value": "0"
+      },
+      {
+        "name": "Max Profit Slippage Volume",
+        "value": "1.0"
+      },
+      {
+        "name": "Gap Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Safe Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Stops Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Pendings Mode",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Slide",
+        "value": "1"
+      },
+      {
+        "name": "Gap Stops Slide",
+        "value": "1"
+      },
+      {
+        "name": "News Stops & Freezes (levels)",
+        "value": "0"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "1"
+      },
+      {
+        "name": "News Time 1",
+        "value": "2001.01.31 19:43:00,10 min"
+      },
+      {
+        "name": "News Time 2",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "VirtualDealer - Copy (3).dll",
+      "info": {
+        "name": "Routing",
+        "version": 400,
+        "copyright": ""
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Delay (1-10 sec, 0 - disable)",
+        "value": "0"
+      },
+      {
+        "name": "Virtual Manager Account",
+        "value": "50002"
+      },
+      {
+        "name": "Groups",
+        "value": ",*,"
+      },
+      {
+        "name": "Symbols",
+        "value": ",*,"
+      },
+      {
+        "name": "Max Volume",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage (pips)",
+        "value": "100"
+      },
+      {
+        "name": "Max Profit Slippage (pips)",
+        "value": "0"
+      },
+      {
+        "name": "Max Profit Slippage Volume",
+        "value": "1.0"
+      },
+      {
+        "name": "Gap Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Safe Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Stops Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Pendings Mode",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Slide",
+        "value": "1"
+      },
+      {
+        "name": "Gap Stops Slide",
+        "value": "1"
+      },
+      {
+        "name": "News Stops & Freezes (levels)",
+        "value": "0"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "1"
+      },
+      {
+        "name": "News Time 1",
+        "value": "2001.01.31 19:43:00,10 min"
+      },
+      {
+        "name": "News Time 2",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "VirtualDealer - Copy (4).dll",
+      "info": {
+        "name": "Routing",
+        "version": 400,
+        "copyright": ""
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Delay (1-10 sec, 0 - disable)",
+        "value": "0"
+      },
+      {
+        "name": "Virtual Manager Account",
+        "value": "50003"
+      },
+      {
+        "name": "Groups",
+        "value": ",*,"
+      },
+      {
+        "name": "Symbols",
+        "value": ",*,"
+      },
+      {
+        "name": "Max Volume",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage (pips)",
+        "value": "100"
+      },
+      {
+        "name": "Max Profit Slippage (pips)",
+        "value": "0"
+      },
+      {
+        "name": "Max Profit Slippage Volume",
+        "value": "1.0"
+      },
+      {
+        "name": "Gap Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Safe Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Stops Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Pendings Mode",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Slide",
+        "value": "1"
+      },
+      {
+        "name": "Gap Stops Slide",
+        "value": "1"
+      },
+      {
+        "name": "News Stops & Freezes (levels)",
+        "value": "0"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "1"
+      },
+      {
+        "name": "News Time 1",
+        "value": "2001.01.31 19:43:00,10 min"
+      },
+      {
+        "name": "News Time 2",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "VirtualDealer - Copy (5).dll",
+      "info": {
+        "name": "Routing",
+        "version": 400,
+        "copyright": ""
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Delay (1-10 sec, 0 - disable)",
+        "value": "0"
+      },
+      {
+        "name": "Virtual Manager Account",
+        "value": "50004"
+      },
+      {
+        "name": "Groups",
+        "value": ",*,"
+      },
+      {
+        "name": "Symbols",
+        "value": ",*,"
+      },
+      {
+        "name": "Max Volume",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage (pips)",
+        "value": "100"
+      },
+      {
+        "name": "Max Profit Slippage (pips)",
+        "value": "0"
+      },
+      {
+        "name": "Max Profit Slippage Volume",
+        "value": "1.0"
+      },
+      {
+        "name": "Gap Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Safe Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Stops Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Pendings Mode",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Slide",
+        "value": "1"
+      },
+      {
+        "name": "Gap Stops Slide",
+        "value": "1"
+      },
+      {
+        "name": "News Stops & Freezes (levels)",
+        "value": "0"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "1"
+      },
+      {
+        "name": "News Time 1",
+        "value": "2001.01.31 19:43:00,10 min"
+      },
+      {
+        "name": "News Time 2",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "VirtualDealer - Copy.dll",
+      "info": {
+        "name": "Routing",
+        "version": 400,
+        "copyright": ""
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Delay (1-10 sec, 0 - disable)",
+        "value": "0"
+      },
+      {
+        "name": "Virtual Manager Account",
+        "value": "50005"
+      },
+      {
+        "name": "Groups",
+        "value": ",*,"
+      },
+      {
+        "name": "Symbols",
+        "value": ",*,"
+      },
+      {
+        "name": "Max Volume",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage (pips)",
+        "value": "100"
+      },
+      {
+        "name": "Max Profit Slippage (pips)",
+        "value": "0"
+      },
+      {
+        "name": "Max Profit Slippage Volume",
+        "value": "1.0"
+      },
+      {
+        "name": "Gap Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Safe Level (spreads)",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Stops Tick Counter",
+        "value": "5"
+      },
+      {
+        "name": "Gap Pendings Mode",
+        "value": "0"
+      },
+      {
+        "name": "Gap Pendings Slide",
+        "value": "1"
+      },
+      {
+        "name": "Gap Stops Slide",
+        "value": "1"
+      },
+      {
+        "name": "News Stops & Freezes (levels)",
+        "value": "0"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "1"
+      },
+      {
+        "name": "News Time 1",
+        "value": "2001.01.31 19:43:00,10 min"
+      },
+      {
+        "name": "News Time 2",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "DealerLogic - Copy (2).dll",
+      "info": {
+        "name": "DealerLogic",
+        "version": 221,
+        "copyright": "FxLab.biz"
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Account Manager",
+        "value": "70002"
+      },
+      {
+        "name": "Delay",
+        "value": "0"
+      },
+      {
+        "name": "Delay timeout",
+        "value": "10"
+      },
+      {
+        "name": "Sleep quotes",
+        "value": "0"
+      },
+      {
+        "name": "Period",
+        "value": "0.100"
+      },
+      {
+        "name": "Magic delay",
+        "value": "10"
+      },
+      {
+        "name": "Filter groups",
+        "value": "!*"
+      },
+      {
+        "name": "Filter zip code",
+        "value": "*"
+      },
+      {
+        "name": "Filter securities",
+        "value": "!*"
+      },
+      {
+        "name": "Filter min volume",
+        "value": "0.00"
+      },
+      {
+        "name": "Filter max volume",
+        "value": "inf"
+      },
+      {
+        "name": "Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "Switch volume",
+        "value": "0.00, 0.00"
+      },
+      {
+        "name": "Suffix",
+        "value": ""
+      },
+      {
+        "name": "Slip market open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip so buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip so sell",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage",
+        "value": "1000"
+      },
+      {
+        "name": "Max Profit Slippage",
+        "value": "0"
+      },
+      {
+        "name": "Earning currency",
+        "value": "USD"
+      },
+      {
+        "name": "Earning standart",
+        "value": "*"
+      },
+      {
+        "name": "Earning mini",
+        "value": "!*"
+      },
+      {
+        "name": "User *",
+        "value": "none"
+      },
+      {
+        "name": "User 1",
+        "value": "10.00, 15, 20, pt"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "0"
+      },
+      {
+        "name": "News Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Delay timeout",
+        "value": "0.001"
+      },
+      {
+        "name": "News Magic Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "News Switch volume",
+        "value": "0.00, 0.00"
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "DealerLogic - Copy (3).dll",
+      "info": {
+        "name": "DealerLogic",
+        "version": 221,
+        "copyright": "FxLab.biz"
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Account Manager",
+        "value": "70003"
+      },
+      {
+        "name": "Delay",
+        "value": "0"
+      },
+      {
+        "name": "Delay timeout",
+        "value": "10"
+      },
+      {
+        "name": "Sleep quotes",
+        "value": "0"
+      },
+      {
+        "name": "Period",
+        "value": "0.100"
+      },
+      {
+        "name": "Magic delay",
+        "value": "10"
+      },
+      {
+        "name": "Filter groups",
+        "value": "!*"
+      },
+      {
+        "name": "Filter zip code",
+        "value": "*"
+      },
+      {
+        "name": "Filter securities",
+        "value": "!*"
+      },
+      {
+        "name": "Filter min volume",
+        "value": "0.00"
+      },
+      {
+        "name": "Filter max volume",
+        "value": "inf"
+      },
+      {
+        "name": "Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "Switch volume",
+        "value": "0.00, 0.00"
+      },
+      {
+        "name": "Suffix",
+        "value": ""
+      },
+      {
+        "name": "Slip market open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip so buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip so sell",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage",
+        "value": "1000"
+      },
+      {
+        "name": "Max Profit Slippage",
+        "value": "0"
+      },
+      {
+        "name": "Earning currency",
+        "value": "USD"
+      },
+      {
+        "name": "Earning standart",
+        "value": "*"
+      },
+      {
+        "name": "Earning mini",
+        "value": "!*"
+      },
+      {
+        "name": "User *",
+        "value": "none"
+      },
+      {
+        "name": "User 1",
+        "value": "10.00, 15, 20, pt"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "0"
+      },
+      {
+        "name": "News Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Delay timeout",
+        "value": "0.001"
+      },
+      {
+        "name": "News Magic Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "News Switch volume",
+        "value": "0.00, 0.00"
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "DealerLogic - Copy (4).dll",
+      "info": {
+        "name": "DealerLogic",
+        "version": 221,
+        "copyright": "FxLab.biz"
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Account Manager",
+        "value": "70004"
+      },
+      {
+        "name": "Delay",
+        "value": "0"
+      },
+      {
+        "name": "Delay timeout",
+        "value": "10"
+      },
+      {
+        "name": "Sleep quotes",
+        "value": "0"
+      },
+      {
+        "name": "Period",
+        "value": "0.100"
+      },
+      {
+        "name": "Magic delay",
+        "value": "10"
+      },
+      {
+        "name": "Filter groups",
+        "value": "!*"
+      },
+      {
+        "name": "Filter zip code",
+        "value": "*"
+      },
+      {
+        "name": "Filter securities",
+        "value": "!*"
+      },
+      {
+        "name": "Filter min volume",
+        "value": "0.00"
+      },
+      {
+        "name": "Filter max volume",
+        "value": "inf"
+      },
+      {
+        "name": "Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "Switch volume",
+        "value": "0.00, 0.00"
+      },
+      {
+        "name": "Suffix",
+        "value": ""
+      },
+      {
+        "name": "Slip market open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip so buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip so sell",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage",
+        "value": "1000"
+      },
+      {
+        "name": "Max Profit Slippage",
+        "value": "0"
+      },
+      {
+        "name": "Earning currency",
+        "value": "USD"
+      },
+      {
+        "name": "Earning standart",
+        "value": "*"
+      },
+      {
+        "name": "Earning mini",
+        "value": "!*"
+      },
+      {
+        "name": "User *",
+        "value": "none"
+      },
+      {
+        "name": "User 1",
+        "value": "10.00, 15, 20, pt"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "0"
+      },
+      {
+        "name": "News Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Delay timeout",
+        "value": "0.001"
+      },
+      {
+        "name": "News Magic Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "News Switch volume",
+        "value": "0.00, 0.00"
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "DealerLogic - Copy (5).dll",
+      "info": {
+        "name": "DealerLogic",
+        "version": 221,
+        "copyright": "FxLab.biz"
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Account Manager",
+        "value": "70005"
+      },
+      {
+        "name": "Delay",
+        "value": "0"
+      },
+      {
+        "name": "Delay timeout",
+        "value": "10"
+      },
+      {
+        "name": "Sleep quotes",
+        "value": "0"
+      },
+      {
+        "name": "Period",
+        "value": "0.100"
+      },
+      {
+        "name": "Magic delay",
+        "value": "10"
+      },
+      {
+        "name": "Filter groups",
+        "value": "!*"
+      },
+      {
+        "name": "Filter zip code",
+        "value": "*"
+      },
+      {
+        "name": "Filter securities",
+        "value": "!*"
+      },
+      {
+        "name": "Filter min volume",
+        "value": "0.00"
+      },
+      {
+        "name": "Filter max volume",
+        "value": "inf"
+      },
+      {
+        "name": "Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "Switch volume",
+        "value": "0.00, 0.00"
+      },
+      {
+        "name": "Suffix",
+        "value": ""
+      },
+      {
+        "name": "Slip market open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip so buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip so sell",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage",
+        "value": "1000"
+      },
+      {
+        "name": "Max Profit Slippage",
+        "value": "0"
+      },
+      {
+        "name": "Earning currency",
+        "value": "USD"
+      },
+      {
+        "name": "Earning standart",
+        "value": "*"
+      },
+      {
+        "name": "Earning mini",
+        "value": "!*"
+      },
+      {
+        "name": "User *",
+        "value": "none"
+      },
+      {
+        "name": "User 1",
+        "value": "10.00, 15, 20, pt"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "0"
+      },
+      {
+        "name": "News Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Delay timeout",
+        "value": "0.001"
+      },
+      {
+        "name": "News Magic Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "News Switch volume",
+        "value": "0.00, 0.00"
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "DealerLogic - Copy.dll",
+      "info": {
+        "name": "DealerLogic",
+        "version": 221,
+        "copyright": "FxLab.biz"
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Account Manager",
+        "value": "70006"
+      },
+      {
+        "name": "Delay",
+        "value": "0"
+      },
+      {
+        "name": "Delay timeout",
+        "value": "10"
+      },
+      {
+        "name": "Sleep quotes",
+        "value": "0"
+      },
+      {
+        "name": "Period",
+        "value": "0.100"
+      },
+      {
+        "name": "Magic delay",
+        "value": "10"
+      },
+      {
+        "name": "Filter groups",
+        "value": "!*"
+      },
+      {
+        "name": "Filter zip code",
+        "value": "*"
+      },
+      {
+        "name": "Filter securities",
+        "value": "!*"
+      },
+      {
+        "name": "Filter min volume",
+        "value": "0.00"
+      },
+      {
+        "name": "Filter max volume",
+        "value": "inf"
+      },
+      {
+        "name": "Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "Switch volume",
+        "value": "0.00, 0.00"
+      },
+      {
+        "name": "Suffix",
+        "value": ""
+      },
+      {
+        "name": "Slip market open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip so buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip so sell",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage",
+        "value": "1000"
+      },
+      {
+        "name": "Max Profit Slippage",
+        "value": "0"
+      },
+      {
+        "name": "Earning currency",
+        "value": "USD"
+      },
+      {
+        "name": "Earning standart",
+        "value": "*"
+      },
+      {
+        "name": "Earning mini",
+        "value": "!*"
+      },
+      {
+        "name": "User *",
+        "value": "none"
+      },
+      {
+        "name": "User 1",
+        "value": "10.00, 15, 20, pt"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "0"
+      },
+      {
+        "name": "News Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Delay timeout",
+        "value": "0.001"
+      },
+      {
+        "name": "News Magic Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "News Switch volume",
+        "value": "0.00, 0.00"
+      }
+    ]
+  },
+  {
+    "plugin": {
+      "name": "DealerLogic.dll",
+      "info": {
+        "name": "DealerLogic",
+        "version": 221,
+        "copyright": "FxLab.biz"
+      },
+      "enabled": 1,
+      "configurable": 1,
+      "manager_access": 0
+    },
+    "params": [
+      {
+        "name": "Account Manager",
+        "value": "70001"
+      },
+      {
+        "name": "Delay",
+        "value": "0"
+      },
+      {
+        "name": "Delay timeout",
+        "value": "10"
+      },
+      {
+        "name": "Sleep quotes",
+        "value": "0"
+      },
+      {
+        "name": "Period",
+        "value": "0.100"
+      },
+      {
+        "name": "Magic delay",
+        "value": "10"
+      },
+      {
+        "name": "Filter groups",
+        "value": "!*"
+      },
+      {
+        "name": "Filter zip code",
+        "value": "*"
+      },
+      {
+        "name": "Filter securities",
+        "value": "!*"
+      },
+      {
+        "name": "Filter min volume",
+        "value": "0.00"
+      },
+      {
+        "name": "Filter max volume",
+        "value": "inf"
+      },
+      {
+        "name": "Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "Switch volume",
+        "value": "0.00, 0.00"
+      },
+      {
+        "name": "Suffix",
+        "value": ""
+      },
+      {
+        "name": "Slip market open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip market close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip instant close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request open sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip request close sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell limit",
+        "value": "0"
+      },
+      {
+        "name": "Slip buy stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip sell stop",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip tp sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip sl sell",
+        "value": "0"
+      },
+      {
+        "name": "Slip so buy",
+        "value": "0"
+      },
+      {
+        "name": "Slip so sell",
+        "value": "0"
+      },
+      {
+        "name": "Max Losing Slippage",
+        "value": "1000"
+      },
+      {
+        "name": "Max Profit Slippage",
+        "value": "0"
+      },
+      {
+        "name": "Earning currency",
+        "value": "USD"
+      },
+      {
+        "name": "Earning standart",
+        "value": "*"
+      },
+      {
+        "name": "Earning mini",
+        "value": "!*"
+      },
+      {
+        "name": "User *",
+        "value": "none"
+      },
+      {
+        "name": "User 1",
+        "value": "10.00, 15, 20, pt"
+      },
+      {
+        "name": "Allow Pendings on News",
+        "value": "0"
+      },
+      {
+        "name": "News Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Delay timeout",
+        "value": "0.001"
+      },
+      {
+        "name": "News Magic Delay",
+        "value": "0.001"
+      },
+      {
+        "name": "News Switch rand",
+        "value": "0, 0, 100"
+      },
+      {
+        "name": "News Switch volume",
+        "value": "0.00, 0.00"
       }
     ]
   }

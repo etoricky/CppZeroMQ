@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x10helloworld.proto\"\x1c\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\"\x1d\n\nHelloReply\x12\x0f\n\x07message\x18\x01 \x01(\t23\n\x07Greeter\x12(\n\x08SayHello\x12\r.HelloRequest\x1a\x0b.HelloReply\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x10helloworld.proto\"\x1c\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\"\x1d\n\nHelloReply\x12\x0f\n\x07message\x18\x01 \x01(\t2b\n\x07Greeter\x12(\n\x08SayHello\x12\r.HelloRequest\x1a\x0b.HelloReply\"\x00\x12-\n\rSayHelloAgain\x12\r.HelloRequest\x1a\x0b.HelloReply\"\x00\x62\x06proto3'
 )
 
 
@@ -112,12 +112,21 @@ _GREETER = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   serialized_start=81,
-  serialized_end=132,
+  serialized_end=179,
   methods=[
   _descriptor.MethodDescriptor(
     name='SayHello',
     full_name='Greeter.SayHello',
     index=0,
+    containing_service=None,
+    input_type=_HELLOREQUEST,
+    output_type=_HELLOREPLY,
+    serialized_options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='SayHelloAgain',
+    full_name='Greeter.SayHelloAgain',
+    index=1,
     containing_service=None,
     input_type=_HELLOREQUEST,
     output_type=_HELLOREPLY,

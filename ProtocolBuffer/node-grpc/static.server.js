@@ -9,9 +9,15 @@ function sayHello(call, callback) {
   callback(null, reply);
 }
 
+function sayHelloAgain(call, callback) {
+  var reply = new messages.HelloReply();
+  reply.setMessage('Hello Again ' + call.request.getName());
+  callback(null, reply);
+}
+
 function main() {
   var server = new grpc.Server();
-  server.addService(services.GreeterService, {sayHello: sayHello});
+  server.addService(services.GreeterService, {sayHello: sayHello, sayHelloAgain: sayHelloAgain});
   server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
   server.start();
 }

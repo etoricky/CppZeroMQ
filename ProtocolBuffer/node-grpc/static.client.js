@@ -15,6 +15,9 @@ function main() {
   client.sayHello(request, function(err, response) {
     console.log('Greeting:', response.getMessage());
   });
+  client.sayHelloAgain(request, function(err, response) {
+    console.log('Greeting:', response.getMessage());
+  });
 }
 
 main();

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+  </head>
+  <body>
+    <script src="bundle.js"></script>
+    <script>
+        const message = new proto.tutorial.Person();
+        message.setId(12345);
+        message.setName('Peter');
+        console.log(message);
+        const encoded = message.serializeBinary();
+        console.log(encoded);
+        const decoded = proto.tutorial.Person.deserializeBinary(encoded);
+        console.log(decoded);
+    </script>
+  </body>
+</html>

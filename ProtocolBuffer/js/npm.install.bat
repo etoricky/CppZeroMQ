@@ -1,1 +1,1 @@
-npm install google-protobuf browserify
+npm install google-protobuf browserify opn express

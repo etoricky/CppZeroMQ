@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
   <body>
-     Check Console
+    <h3>Check Console</h3>
+    <div ng-app="myApp" ng-controller="myCtrl"> 
+    </div>
+     
     <script src="bundle.js"></script>
     <script>
         function test02() {
@@ -19,6 +23,14 @@
             console.log(decoded);
         }
         test02();
+    </script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope, $http) {
+          $http.get("binary").then(function (response) {
+              console.log(response.data);
+          });
+        });
     </script>
   </body>
 </html>

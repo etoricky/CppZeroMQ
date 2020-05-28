@@ -24,16 +24,15 @@
         }
         test02();
     </script>
-    <script>    
-        function test03(response) {
-            const encoded = new Uint8Array(Object.values(response.data));
-            console.log(encoded);
-            const decoded = proto.tutorial.Person.deserializeBinary(encoded);
+    <script>        
+        async function test03(response) {
+            const buffer = await response.data.arrayBuffer();
+            const decoded = proto.tutorial.Person.deserializeBinary(buffer);
             console.log(decoded);
         }
         var app = angular.module('myApp', []);
         app.controller('myCtrl', function($scope, $http) {
-          $http.get("binary").then(test03);
+          $http.get("binary", {responseType: 'blob'}).then(test03);
         });
     </script>
   </body>

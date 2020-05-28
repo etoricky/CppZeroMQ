@@ -17,7 +17,7 @@ function startExpress() {
         message.setName('Peter');
         console.log(message);
         const encoded = message.serializeBinary();
-        res.send(encoded);
+        res.send(Buffer.from(encoded, 'binary'));
     });
     const server = app.listen(port, host, ()=>{
         const address = server.address();

@@ -11,13 +11,21 @@ function startExpress() {
     app.use(express.urlencoded({extended: true})); // Parse URL-encoded bodies (as sent by HTML forms)
     app.use(express.json()); // Parse JSON bodies (as sent by API clients)
     app.set('json spaces', 2);
+    app.get('/binary', function(req, res) {
+        const message = new addressbook_pb.Person();
+        message.setId(12345);
+        message.setName('Peter');
+        console.log(message);
+        const encoded = message.serializeBinary();
+        res.send(encoded);
+    });
     const server = app.listen(port, host, ()=>{
         const address = server.address();
         console.log("listen http://%s:%s", address.address, address.port);
     });
 }
 
-const main = async function() {
+function test01() {
     const message = new addressbook_pb.Person();
     message.setId(12345);
     message.setName('Peter');
@@ -26,7 +34,10 @@ const main = async function() {
     console.log(encoded);
     const decoded = proto.tutorial.Person.deserializeBinary(encoded);
     console.log(decoded);
-    
+}
+
+const main = async function() {
+    test01();
     startExpress();
 }
 

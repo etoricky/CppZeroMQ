@@ -5,16 +5,20 @@
     <title>App</title>
   </head>
   <body>
+     Check Console
     <script src="bundle.js"></script>
     <script>
-        const message = new proto.tutorial.Person();
-        message.setId(12345);
-        message.setName('Peter');
-        console.log(message);
-        const encoded = message.serializeBinary();
-        console.log(encoded);
-        const decoded = proto.tutorial.Person.deserializeBinary(encoded);
-        console.log(decoded);
+        function test02() {
+            const message = new proto.tutorial.Person();
+            message.setId(12345);
+            message.setName('Peter');
+            console.log(message);
+            const encoded = message.serializeBinary();
+            console.log(encoded);
+            const decoded = proto.tutorial.Person.deserializeBinary(encoded);
+            console.log(decoded);
+        }
+        test02();
     </script>
   </body>
 </html>

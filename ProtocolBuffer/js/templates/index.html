@@ -24,12 +24,16 @@
         }
         test02();
     </script>
-    <script>
+    <script>    
+        function test03(response) {
+            const encoded = new Uint8Array(Object.values(response.data));
+            console.log(encoded);
+            const decoded = proto.tutorial.Person.deserializeBinary(encoded);
+            console.log(decoded);
+        }
         var app = angular.module('myApp', []);
         app.controller('myCtrl', function($scope, $http) {
-          $http.get("binary").then(function (response) {
-              console.log(response.data);
-          });
+          $http.get("binary").then(test03);
         });
     </script>
   </body>

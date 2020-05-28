@@ -26,8 +26,9 @@
     </script>
     <script>        
         async function test03(response) {
-            const buffer = await response.data.arrayBuffer();
-            const decoded = proto.tutorial.Person.deserializeBinary(buffer);
+            const encoded = await response.data.arrayBuffer();
+            console.log(encoded);
+            const decoded = proto.tutorial.Person.deserializeBinary(encoded);
             console.log(decoded);
         }
         var app = angular.module('myApp', []);

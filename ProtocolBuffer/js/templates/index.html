@@ -25,15 +25,15 @@
         test02();
     </script>
     <script>        
-        async function test03(response) {
-            const encoded = await response.data.arrayBuffer();
+        function test03(response) {
+            const encoded = response.data;
             console.log(encoded);
             const decoded = proto.tutorial.Person.deserializeBinary(encoded);
             console.log(decoded);
         }
         var app = angular.module('myApp', []);
         app.controller('myCtrl', function($scope, $http) {
-          $http.get("binary", {responseType: 'blob'}).then(test03);
+          $http.get("binary", {responseType: 'arraybuffer'}).then(test03);
         });
     </script>
   </body>

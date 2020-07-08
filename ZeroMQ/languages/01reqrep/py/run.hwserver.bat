@@ -1,0 +1,2 @@
+python hwserver.py
+PAUSE

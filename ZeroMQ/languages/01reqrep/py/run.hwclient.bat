@@ -1,0 +1,2 @@
+python hwclient.py
+PAUSE

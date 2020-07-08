@@ -15,7 +15,7 @@ println("Connecting to hello world server...")
 socket = Socket(context, REQ)
 ZMQ.connect(socket, "tcp://localhost:5555")
 
-for request in [1:10]
+for request = 1:5
     println("Sending request $request ...")
     ZMQ.send(socket, "Hello")
 

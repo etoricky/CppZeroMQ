@@ -1,0 +1,2 @@
+node wuclient.js
+PAUSE

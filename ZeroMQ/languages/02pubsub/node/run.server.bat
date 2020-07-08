@@ -1,0 +1,2 @@
+node wuserver.js
+PAUSE

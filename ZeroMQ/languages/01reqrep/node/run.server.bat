@@ -1,2 +1,2 @@
-python hwserver.py
+node hwserver.js
 PAUSE

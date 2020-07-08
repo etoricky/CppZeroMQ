@@ -1,0 +1,2 @@
+python wuserver.py
+PAUSE

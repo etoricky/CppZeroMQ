@@ -1,0 +1,2 @@
+python wuclient.py
+PAUSE

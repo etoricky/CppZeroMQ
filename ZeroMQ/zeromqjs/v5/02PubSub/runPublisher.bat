@@ -1,0 +1,2 @@
+node publisher.js
+PAUSE

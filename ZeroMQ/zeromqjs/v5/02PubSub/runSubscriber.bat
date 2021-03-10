@@ -1,0 +1,2 @@
+node subscriber.js
+PAUSE

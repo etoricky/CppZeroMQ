@@ -10,6 +10,6 @@ pub.bind("tcp://127.0.0.1:3000", err => {
 })
 
 setInterval(()=>{
-	pub.send(+new Date())
+	pub.send("kitty cats" + new Date())
 }, 500);
 

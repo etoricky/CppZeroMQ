@@ -5,3 +5,7 @@ sock.send("4");
 sock.on('message', msg => {
 	console.log(msg.toString());
 })
+
+setInterval(()=>{
+	sock.send("client " + new Date())
+}, 500);

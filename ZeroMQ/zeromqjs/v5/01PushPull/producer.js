@@ -12,7 +12,7 @@ function run() {
   console.log("Producer bound to port 3000")
 
   setInterval(()=>{
-	sock.send("kitty cats" + new Date())
+	sock.send("kitty cats " + new Date())
 }, 500);
 }
 

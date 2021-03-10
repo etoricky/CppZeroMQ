@@ -9,7 +9,7 @@ async function run() {
   await sock.send("4")
   const [result] = await sock.receive()
 
-  console.log(result)
+  console.log(result.toString())
 }
 
 run()

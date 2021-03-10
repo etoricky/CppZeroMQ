@@ -1,6 +1,5 @@
 const zmq = require("zeromq/v5-compat")
 const sub = zmq.socket("sub")
-
 sub.on("message", msg => {
     console.log(msg);
   })
